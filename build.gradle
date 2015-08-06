@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+repositories {
+ 	mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	runtime		'org.apache.ivy:ivy:2.4.0',
+				'com.fasterxml.jackson.core:jackson-core:2.6.0',
+				'com.fasterxml.jackson.core:jackson-databind:2.6.0'
+				
+    testCompile	'junit:junit:4.11'
+}
+
+sourceSets {
+    main {
+        java {
+        	srcDir 'src/main/java'
+        	srcDir 'src/interfaces/java'
+        }
+    }
+}
+jar{
+    manifest {
+        attributes	'Manifest-Version': '1.0',
+					'Implementation-Title': 'constructor',
+					'Implementation-Version': '0.0.1-SNAPSHOT',
+					'Main-Class': 'Constructor'    
+    }
+}
+

@@ -1,0 +1,19 @@
+{
+	//TODO: rename to groupId, artifactId, version
+	"group": "com.kncept.constructor",
+	"name": "constructor",
+	"version":"0.0.1-SNAPSHOT",
+	
+	"dependencies": {
+		"compile": [
+			"org.apache.ivy:ivy:2.4.0",
+			"com.fasterxml.jackson.core:jackson-core:2.6.0",
+			"com.fasterxml.jackson.core:jackson-databind:2.6.0",
+			
+			//uh... need to do something about this
+			"junit:junit:4.11"
+		],
+		"test" : "junit:junit:4.11"
+	}
+	
+}
